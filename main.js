@@ -24,6 +24,9 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 // Add your functions below:
+/*
+The purpose of validateCred() is to return true when an array contains digits of a valid credit card number and false when it is invalid.
+*/
 const validateCred = (arr) => {
     let firstSum = 0;
     let secondSum = 0;
@@ -48,6 +51,7 @@ const validateCred = (arr) => {
     }
 };
 
+/**The role of findInvalidCards() is to check through the nested array for which numbers are invalid, and return another nested array of invalid cards. */
 const findInvalidCards = (nestedArr) => {
     let invalidCardsNestedArr = [];
     for(let i = 0; i < nestedArr.length; i++){
@@ -59,6 +63,7 @@ const findInvalidCards = (nestedArr) => {
 };
 
 
+/**idInvalidCardCompanies() one parameter for a nested array of invalid numbers and returns an array of companies. */
 const idInvalidCardCompanies = (nestedArr) => {
     let nameOfCompanies = [];
     let americanExpress = 3;
